@@ -86,6 +86,16 @@ header
     justify-content: space-between;
     
 }
+.nav-item
+{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+.nav-item:hover
+{
+    opacity: 0.5;
+}
+
 header .nav-item
 {
     margin-right: 70px;
@@ -102,7 +112,8 @@ html
     padding-top: 20px;
 }
 
-.container {
+.container 
+{
     width: 1000px;
     margin: 0 auto;
     padding: 20px 100px 0 100px;
@@ -225,3 +236,100 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+.container
+{
+    animation: fadein-all 0.5s ease-out;
+}
+
+@keyframes fadein-all {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+img
+{
+    transition: opacity 0.5s linear, border-radius 0.5s linear;
+    animation: fadein-img 1.5s ease-in;
+}
+  
+  @keyframes fadein-img {
+      from {
+          border-radius: 40%;
+          opacity: 0;
+      }
+      to {
+          opacity:1;
+          border-radius: 0%;
+      }
+  }
+  
+  .button
+  {
+    transition: opacity 0.3s linear, border-radius 0.3s linear;
+    animation: fadein 1s ease-in;
+  }
+
+  .button:hover {
+    border-radius: 30px;
+    opacity: 0.75;
+  }
+
+  @keyframes fadein-button {
+    from {
+        border-radius: 40%;
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+        border-radius: 10px;
+    }
+}
+
+.container-contact form
+{
+    display: block;
+    width: 75%;
+    margin: 0 2%;
+}
+
+input[type=text], select {
+     /* Full width */
+    display: block;
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  textarea
+  {
+    display: block;
+    width: 100%;
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    opacity: 0.5;
+  }
+  
+  /* Add a background color and some padding around the form */
