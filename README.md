@@ -33,14 +33,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+	
+	Semantic Html adds function to the web page not just astetics. This is like the a tag aor img tag adding certian ordained charactoristics that are not defined in the css which have a functional purpose.
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
 
+	Display: block kills the line and then creates a new line for only other display inline elements to live on. Where display inline lives on the line inherieting the hight restrictions of that line.
+
 3. What are the 4 areas of the box model?
+	
+	[] content: the render objects that that space contains
+	[] padding: the area that is owned by that object that lives out side the content.
+	[] boarder: the area owned by that objecct that lives outside the padding as a buffer between what the object owns and what the object controls
+	[] margin: the area out side the objects ownership but acts as a buffer between this object and the next object.
+	
+	Note: when I say ownership I mean that the object can not control the properties of this space (mainly through color). For example Padding space is included in the background property and border can have a color element, but margin is unowned by the object because it can not change any color properities in this space.
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+	Align items works on the axis that is cross (the z being 0,0,1) to the main axis. Meaning if you took the main axis (the axis from the origin point set by the -reverse commands) then you could cross product it like x-axis x z-axis, this would produce the "cross-axis" in which the align-items lives.
+	
 5. Explain why git is valuable to a team of developers.
+	
+	It is a plat form that allows for a local repository and a server repository which automatically merges large cunks of code between an arbitrary set of clients. This saves a lot of time of refactoring code to inclue many peoples work, saving time and recource of having to do this by hand.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
